@@ -1,0 +1,14 @@
+Wielkość pliku: 1 GB
+Przepustowość: 10 Mb/s
+
+1 GB = 8 589 934 592b
+10 Mb/s = 10 000 000b
+
+narzut Ethernet/IP/TCP = 5%
+retransmisje = 1%
+
+8 589 934 592b * 1.05 = 9 019 431 321,6b
+9 019 431 321,6b * 1.01 = 9 109 625 634,816b = 9 109 625 635b
+
+9 109 625 635b / 10 000 000b = 910,96s = 15 minut i 11 sekund
+
