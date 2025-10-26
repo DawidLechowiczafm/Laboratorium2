@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rejestracja>
+ <osoba id="1">
+    <imie>Dawid</imie>
+    <nazwisko>Lechowicz</nazwisko>
+    <plec>mezczyzna</plec>
+    <wiek>23</wiek>
+ </osoba>
+ <osoba id="2">
+ …
+ </osoba>
+</rejestracja>
