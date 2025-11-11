@@ -1,1 +1,2 @@
-Pamięć podręczna DNS -
+Pamięć podręczna DNS to tymczasowa baza danych w systemie operacyjnym, która przechowuje adresy IP niedawno odwiedzanych stron internetowych, aby przyspieszyć przyszłe przeglądanie.
+Zamiast za każdym razem pytać zewnętrzny serwer DNS w Internecie o adres IP, komputer może natychmiast pobrać go ze swojej lokalnej pamięci podręcznej.
