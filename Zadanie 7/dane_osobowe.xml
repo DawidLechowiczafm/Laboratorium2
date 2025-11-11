@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rejestracja_danych xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:noNamespaceSchemaLocation="dane_osobowe.xsd">
+    
+    <osoba>
+        <imie>Jan</imie>
+        <nazwisko>Kowalski</nazwisko>
+        <płeć>Mężczyzna</płeć>
+        <wiek>30</wiek>
+    </osoba>
+
+</rejestracja_danych>
