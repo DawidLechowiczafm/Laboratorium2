@@ -12,3 +12,6 @@ retransmisje = 1%
 
 9 109 625 635b / 10 000 000b = 910,96s = 15 minut i 11 sekund
 
+Wnioski:
+Maksymalna przepustowość kanału nie jest równoznaczna z realną prędkością pobierania danych.
+Narzut protokołów (Ethernet, IP, TCP) oraz ewentualne retransmisje mają realny wpływ na czas pobierania
