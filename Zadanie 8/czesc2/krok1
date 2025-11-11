@@ -1,0 +1,49 @@
+Krok 1: Obserwacja dodatkowych zdarzeń
+a. Zamknij wszystkie otwarte okna z informacją PDU.
+
+b. W sekcji Event List Filters > Visible Events, kliknij przycisk Show All.
+Jakie dodatkowe typy zdarzeń (Event Types) są wyświetlane?
+DNS, ARP, TCP
+  
+Te dodatkowe typy zdarzeń (protokoły) odgrywają różne role w ramach zestawu TCP/IP. Jeśli wymieniony
+jest protokół odwzorowania adresów (ARP), to wyszukuje on adresy MAC. DNS odpowiedzialny jest za
+konwersję nazwy (na przykład www.osi.local) na adres IP. Dodatkowe zdarzenia TCP odpowiedzialne są
+za połączenie, uzgadnianie parametrów komunikacji oraz za rozłączenie sesji komunikacji pomiędzy
+urządzeniami. O protokołach tych zostało wspomniane już wcześniej i będą one nadal omawiane w dalszej
+części kursu. Obecnie w ramach Packet Tracera istnieje ponad 35 możliwych protokołów (typów zdarzeń)
+dostępnych do przechwytywania.
+
+c. Kliknij pierwsze zdarzenie DNS w kolumnie Info. Zapoznaj się z zakładkami OSI Model i PDU Detail, a
+następnie zwróć uwagę na proces enkapsulacji. Jak spojrzysz na zakładkę OSI Model z podświetloną
+Layer 7, to co się tam dzieje, wypisane jest bezpośrednio poniżej w In Layers i Out Layers ("1. The DNS
+client sends a DNS query to the DNS server.”). Jest to bardzo przydatna informacja, która pomoże
+zrozumieć, co dzieje się podczas procesu komunikacji.
+
+d. Kliknij zakładkę Outbound PDU Details. Jakie informacje podane są w sekcji NAME: DNS QUERY?
+Nazwa domeny czyli: www.osi.local
+
+e. Kliknij ostatni kolorowy kwadrat DNS Info na liście zdarzeń. Które urządzenie jest wyświetlane?
+PC-PT
+Jaka jest wartość wyświetlona obok ADDRESS: w sekcji DNS ANSWER zakładki (Inbound PDU Details)?
+192.168.1.2
+
+f. Znajdź pierwsze zdarzenie HTTP na liście i kliknij kolorowe pole kwadratu zdarzenia TCP bezpośrednio potym zdarzeniu. Zaznacz Layer 4 w zakładce OSI Model. Na podstawie numerowanej listy bezpośrednio
+poniżej obszarów In Layers i Out Layers napisz jakie informacje wyświetlone są w punkcie 4 i 5?
+4. The TCP connection is successful.
+5. The device sets the connection state to ESTABLISHED.
+
+TCP zarządza łączeniem i rozłączaniem kanału komunikacyjnego wraz z innymi obowiązkami. To
+określone zdarzenie pokazuje, że kanał komunikacyjny został ustanowiony (ESTABLISHED).
+
+g. Kliknij ostatnie zdarzenie TCP. Zaznacz Layer 4 w zakładce OSI Model. Przeanalizuj kroki opisane
+bezpośrednio pod obszarami In Layers i Out Layers. W oparciu o informacje zawarte w ostatniej pozycji
+na liście (powinna być pozycja 4) napisz jakie jest przeznaczenie tego zdarzenia?
+Zakończenie połączenia TCP
+
+Symulacja stanowi przykład sesji internetowej pomiędzy klientem a serwerem w sieci lokalnej (LAN). Klient
+generuje żądania do określonych usług działających na serwerze. Serwer musi być skonfigurowany do
+nasłuchiwania na określonych portach żądań klienta. (Podpowiedź: Spójrz na warstwę 4 zakładki OSI Model
+żeby zobaczyć informacje o porcie.)
+Na podstawie informacji, która została sprawdzona podczas przechwytywania w Packet Tracer, napisz jaki
+numer portu ma, nasłuchujący żądań stron WWW serwer (Web Server)?
+80
