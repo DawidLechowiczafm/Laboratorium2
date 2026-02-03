@@ -1,0 +1,14 @@
+Spsób połącznia T568A, prosty
+
+RJ-45 "1"	              RJ-45 "2"	
+1 (Biało-Zielony)       1 
+2 (Zielony)	            2	
+3 (Biało-Pomarańczowy)	3	
+4 (Niebieski)	          4	
+5 (Biało-Niebieski)	    5	
+6 (Pomarańczowy)	      6	
+7 (Biało-Brązowy)	      7
+8 (Brązowy)	            8
+
+Brak ciągłości obwodu.\
+Przy zadaniu miałem problemy przez usuniecie zbyt mało izolacji zewnętrznej, i problemy z zaciskarką.
